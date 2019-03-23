@@ -94,16 +94,23 @@
 
                         </div>
 
+                        <div class="form-group" style="display: none">
+                            <label  class="text-uppercase" style="margin-left: 15px">Privacy Type</label><br>
+                            
+                            <input type="radio" name="privacy" value="private"> Private<br>
+                            <input type="radio" name="privacy" value="public"> Public<br>
+                        </div>
+
                        
 
                         <div class="form-group">
-                            <label  class="text-uppercase" style="margin-left: 15px">Schedule</label><br>
-
-
+                            <label  class="text-uppercase" style="margin-left: 15px">Schedule</label>
+                            
                             <input type="radio" name="schedule" value="daily"> Daily<br>
-                            <input type="radio" name="schedule" value="weekly"> Weekly<br>
+                            <input type="radio" name="schedule" value="weekly"> Weekly <br>
                             <input type="radio" name="schedule" value="monthly"> Monthly<br>
-                            <input type="radio" name="schedule" value="once"> Once<br>
+                            <input type="radio" name="schedule" value="once"> Once
+                    
                         </div>
 
                     </form>
@@ -132,7 +139,7 @@
 
 
     <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
-    <script src="../js/config.js"></script>
+    <!-- <script src="../js/config.js"></script> -->
     <script src="../js/dbFunction.js"></script>
     <script src="../js/scripts.js"></script>
 </body>
