@@ -19,7 +19,185 @@
     <script src="../js/scripts.js"></script>
     <script src="../js/dbFunction.js"></script>
     <!--scrpts end-->
+
+
+</head>
+
+<body onload="getEventList()">
+
     
+
+    <nav class="nav1">
+        <div class="burger">
+            <div class="burger__patty" ></div>
+            <div ><img src="../assets/logo.png"  alt="" style="height:35px; margin-left: 40%"></div>
+        </div>
+
+        <ul class="nav__list"> <!--The naviagtion bar items -->
+            <li class="nav__item">
+                <a href="./app.html" class="nav__link c-blue"><i class="far fa-clock"></i></a>
+            </li>
+            <li class="nav__item">
+                <a href="./addEvent.html" class="nav__link c-yellow scrolly"><i class="far fa-calendar-alt"></i></a>
+            </li>
+            <li class="nav__item">
+                <a href="./editReminder.html" class="nav__link c-red"><i class="fas fa-edit"></i></a>
+            </li>
+          
+        </ul>
+    </nav>
+ <div style="margin-top: 57px">   
+    <div class="panel__content b-blue" style="padding:10px">
+        <div class="text-center">
+            <h4 class="panel__headline text-center" style="margin-top: 25px;"><i class="far fa-calendar-alt"></i>&nbsp;Daily Timeline</h1>
+            <h5><strong> 23rd March 2019</strong></h6>
+                <!-- <button onclick="getEventList()">Click</button> -->
+
+        </div>
+        <div class="panel__block1"></div>
+    </div>
+    <section class="panel b-blue d-none" id="ev1" style="min-height:150px">
+        <article class="panel__wrapper">
+            <div class="panel__content">
+                <h6 class="panel__headline text-center"><i class="fas fa-clock"></i> </i>&nbsp;<span id="time1">6.00 AM</span></h6>
+                <div class="panel__block"></div>
+                <p><strong >Name : </strong><span id="name1">Morning Excercises</span></p>
+                <p><strong >Description : </strong><span id="desc1">Keep fit!Jog for 15 minutes</span></p>
+            </div>
+        </article>
+    </section>
+
+    <section class="panel b-yellow d-none" id="ev2" style="min-height:150px">
+        <article class="panel__wrapper">
+            <div class="panel__content">
+                <h6 class="panel__headline text-center"><i class="fas fa-clock"></i> </i>&nbsp;<span id="time2">8.00 AM</span></h6>
+                <div class="panel__block"></div>
+                <p><strong >Name : </strong><span id="name2">Take Medicine</span></p>
+                <p><strong >Description : </strong><span id="desc2">Drink the 2 pills due</span></p>
+            </div>
+        </article>
+    </section>
+
+    <section class="panel b-red d-none" id="ev3" style="min-height:150px">
+        <article class="panel__wrapper">
+            <div class="panel__content">
+                <h6 class="panel__headline text-center"><i class="fas fa-clock"></i> </i>&nbsp;<span id="time3">10.00 AM</span></h6>
+                <div class="panel__block"></div>
+                <p><strong >Name : </strong><span id="name3">Doctor Appointment</span></p>
+                <p><strong >Description : </strong><span id="desc3">Monthly clinic at Durden's Hospital</span></p>
+            </div>
+        </article>
+    </section>
+
+    <section class="panel b-green d-none" id="ev4" style="min-height:150px">
+        <article class="panel__wrapper">
+            <div class="panel__content">
+                <h6 class="panel__headline text-center"><i class="fas fa-clock"></i> </i>&nbsp;<span id="time4"></span></h6>
+                <div class="panel__block"></div>
+                <p><strong >Name : </strong><span id="name4"></span></p>
+                <p><strong >Description : </strong><span id="desc4"></span></p>
+            </div>
+        </article>
+    </section>
+
+    <section class="panel b-brown d-none" id="ev5" style="min-height:150px">
+        <article class="panel__wrapper">
+            <div class="panel__content">
+                <h6 class="panel__headline text-center"><i class="fas fa-clock"></i> </i>&nbsp;<span id="time5"></span></h6>
+                <div class="panel__block"></div>
+                <p><strong >Name : </strong><span id="name5"></span></p>
+                <p><strong >Description : </strong><span id="desc5"></span></p>
+            </div>
+        </article>
+    </section>
+
+    
+</div>
+    <!-- <button type="button" onclick="test()">Buttton</button> -->
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+    <script src="../js/config.js"></script>
+    <script src="../js/scripts.js"></script>
+    <script src="../js/timeline.js"></script>
+    <script src="../js/scanner.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>login</title>
+
+    <!--Style Sheets start-->
+    <!-- <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="../css/webfonts.css" rel="stylesheet">
+    <!--Style sheets end-->
+
+    <!--scrpts start-->
+    <!-- <script src="../js/jquery.min.js"></script>
+    <script src="../js/scripts.js"></script>
+    <script src="../js/dbFunction.js"></script> --> -->
+    <!--scrpts end-->
+<!--     
 </head>
 
 <body>
@@ -32,7 +210,7 @@
         </div>
 
         <ul class="nav__list"> <!--The naviagtion bar items -->
-            <li class="nav__item">
+            <!-- <li class="nav__item">
                 <a href="./app.html" class="nav__link c-blue"><i class="far fa-clock"></i></a>
             </li>
             <li class="nav__item">
@@ -103,15 +281,15 @@
                 <div class="panel__block"></div>
                 <p>Appointment with Jane</p>
             </div>
-        </article>
-    </section> -->
+        </article> -->
+    <!-- </section>  -->
 
     <!-- <button type="button" onclick="test()">Buttton</button> -->
 
-    <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
     <script src="../js/config.js"></script>
     <script src="../js/scripts.js"></script>
     <script src="../js/timeline.js"></script>
     <script src="../js/scanner.js"></script>
 </body>
-</html>
+</html>  -->
